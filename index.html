@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Нейродизайнер — ИИ-дизайн для вашего бизнеса</title>
+  <meta name="description" content="Мини-визитки, баннеры, ИИ-видео, сайты и приложения. Дизайн, который продаёт.">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0a0a0f">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card: #14141c;
+      --accent1: #a855f7;
+      --accent2: #06b6d4;
+      --text: #f1f1f5;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding-bottom: 80px;
+      overflow-x: hidden;
+    }
+    .hero {
+      padding: 40px 20px 20px;
+      text-align: left;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    .hero h1 {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 8px;
+      background: linear-gradient(90deg, #fff, var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    .cta-main {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+    .section { padding: 20px; }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .service-card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 16px;
+      border: 1px solid #222;
+    }
+    .service-card h3 { font-size: 15px; margin: 8px 0 4px; }
+    .service-card p { font-size: 12px; color: var(--muted); }
+    .portfolio {
+      display: flex;
+      overflow-x: auto;
+      gap: 12px;
+      padding: 10px 0;
+      scroll-snap-type: x mandatory;
+    }
+    .portfolio img {
+      height: 180px;
+      border-radius: 12px;
+      scroll-snap-align: start;
+      object-fit: cover;
+    }
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #111;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #222;
+    }
+    .nav-item {
+      text-align: center;
+      color: var(--muted);
+      font-size: 11px;
+      text-decoration: none;
+    }
+    .nav-item.active { color: var(--accent2); }
+    .contact-btn {
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: white;
+      border: none;
+      padding: 16px;
+      width: 100%;
+      border-radius: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    .benefit {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 16px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="logo">N</div>
+    <h1>Нейродизайнер</h1>
+    <p class="subtitle">ИИ-дизайн для вашего бизнеса</p>
+    <p>Создаём эффективный дизайн с помощью искусственного интеллекта. Быстро, стильно, продающе.</p>
+    <a href="#contact" class="cta-main">Обсудить проект →</a>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Мои услуги <span style="font-size:14px;color:var(--accent2)">Смотреть все →</span></div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div style="font-size:24px">📇</div>
+        <h3>Мини-визитки</h3>
+        <p>Дизайн визиток, который запоминается и продаёт</p>
+      </div>
+      <div class="service-card">
+        <div style="font-size:24px">🖼️</div>
+        <h3>Баннеры</h3>
+        <p>Продающие баннеры для любых площадок</p>
+      </div>
+      <div class="service-card">
+        <div style="font-size:24px">🎬</div>
+        <h3>AI видео</h3>
+        <p>Короткие видео, которые привлекают и продают</p>
+      </div>
+      <div class="service-card">
+        <div style="font-size:24px">💻</div>
+        <h3>Сайты</h3>
+        <p>Современные сайты, которые конвертируют</p>
+      </div>
+    </div>
+    <div class="service-card" style="margin-top:12px">
+      <div style="font-size:24px">📱</div>
+      <h3>Приложения</h3>
+      <p>Дизайн мобильных приложений, удобный и продающий</p>
+    </div>
+  </div>
+
+  <div class="benefit">
+    <strong>Дизайн, который выделяет. Результат, который продаёт.</strong><br>
+    Давайте создадим ваше преимущество.
+  </div>
+
+  <div class="section">
+    <div class="section-title">Портфолио</div>
+    <div class="portfolio">
+      <img src="images/l7VXt.jpg" alt="Мини-визитка">
+      <img src="images/MTxXn.jpg" alt="Баннер">
+      <img src="images/u3jYk.jpg" alt="AI видео">
+      <img src="images/CExyV.jpg" alt="Сайт и приложение">
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <div class="section-title">Готовы к росту?</div>
+    <p style="color:var(--muted); margin-bottom:16px">Напишите мне — обсудим ваш проект и сделаем дизайн, который будет работать на вас.</p>
+    <button class="contact-btn" onclick="window.open('https://t.me/yourusername', '_blank')">Написать в Telegram</button>
+    <button class="contact-btn" style="background:#25D366; margin-top:10px" onclick="window.open('https://wa.me/79999999999', '_blank')">WhatsApp</button>
+  </div>
+
+  <nav class="bottom-nav">
+    <a href="#" class="nav-item active">🏠<br>Главная</a>
+    <a href="#" class="nav-item">📁<br>Портфолио</a>
+    <a href="#" class="nav-item">✨<br>Как работаю</a>
+    <a href="#contact" class="nav-item">👤<br>Контакты</a>
+  </nav>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    }
+  </script>
+</body>
+</html>
