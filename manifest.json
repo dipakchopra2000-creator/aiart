@@ -1,7 +1,7 @@
 {
   "name": "Нейро",
   "short_name": "Нейро",
-  "description": "Описание вашего приложения",
+  "description": "Генератор изображений с помощью нейросети",
   "start_url": "/aiart/",
   "scope": "/aiart/",
   "display": "standalone",
